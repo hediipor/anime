@@ -15,7 +15,7 @@ export class NaviComponent implements OnInit{
   searchedAnime : string = '';
   dataLoaded = false;
 
-  constructor(private animeService : AnimeService , private event : EventsService ){}
+  constructor( private event : EventsService ){}
   ngOnInit(): void {
     
   }
@@ -23,10 +23,4 @@ export class NaviComponent implements OnInit{
       this.event.emit('searched',searchedAnime);
       this.searchedAnime = '';
   }
-    getAnimes() {
-    this.animeService.getAnimes().subscribe((response) => {
-        (this.animeList = response.data)
-      });
-    this.dataLoaded = true;
-}
 }

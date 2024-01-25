@@ -30,12 +30,11 @@ export class AnimesComponent implements OnInit {
     else{
       this.animeList=this.animeList.filter((anime: { title: string; }) => 
       anime.title.toLowerCase().includes(s.toLowerCase()))
-      console.log('done');
     }
     })
   }
   ngOnInit(): void {
-    this.getAnimes();
+    this.getAnimes(); 
   }
 
   getAnimes() {
