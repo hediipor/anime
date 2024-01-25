@@ -62,3 +62,7 @@ And when the user clicks on an anime image or title he will be directed to `anim
 
 This component contains the html and the css code to style a page that shows the user details about the anime he selected on the `anime component` and it utilises the `getAnime()` method injected from `anime.service.ts`.
 it also has a button, when clicked the method `goBack()` redirects the user the the `anime component`.
+
+### app component
+
+it allows the navigation between components when displaying using the `<router-outlet>` .

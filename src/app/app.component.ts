@@ -18,13 +18,9 @@ import { HttpClientModule } from '@angular/common/http';
 })
 export class AppComponent implements OnInit{
   title = 'anime';
-  animeList : any = [];
-  anime! : Anime ;
-  searchedAnime! : any;
-  searched : any;
-  dataLoaded = false;
 
-  constructor(private animeService : AnimeService ){}
+
+  constructor( ){}
 
   ngOnInit(): void {
     
