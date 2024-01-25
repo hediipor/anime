@@ -36,7 +36,7 @@ Under the /src/app we have our components :
 ### Models
 
 1. anime.ts
-   - a class for anime t
+   - a class for anime
 2. listResponseModel.ts
    - created to in-take data as array
 3. responseModel.ts
