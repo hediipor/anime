@@ -1,0 +1,41 @@
+<navi></navi>
+<div class="card my-5" *ngIf="anime">
+    <div class="card-header">
+        <h3 class="card-title">{{ anime.data.title }}</h3>
+        <h5 class="card-title">{{ anime.data.title_japanese }}</h5>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-2 col-md-12 col-sm-12 text-center order-0">
+                <img class="img-fluid" src="{{ anime.data.images.jpg.image_url }}" alt="{{ anime.data.title }}">
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12 order-1">
+                <p class="card-text">{{ anime.data.synopsis }}</p>
+
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12 order-2">
+                <div class="card-text">
+                    <p>{{anime.data.background}}</p>
+
+                </div>
+            </div>
+        </div>
+        <p class="card-text text-center fs-4">
+            <small class="text-muted">
+                <span class="badge badge-pill bg-primary me-3">
+                    Type: {{ anime.data.type }}
+                </span>
+                <span class="badge badge-pill bg-secondary me-3">
+                    Episodes: {{ anime.data.episodes }}
+                </span>
+                <span class="badge badge-pill bg-success me-3">
+                    Score: {{ anime.data.score }}
+                </span>
+                <span class="badge badge-pill bg-danger me-3">
+                    Status: {{ anime.data.status }}
+                </span>
+            </small>
+        </p>
+    </div>
+    <button (click)="goBack()" class="btn btn-primary btn-lg">BACK</button>
+</div>
